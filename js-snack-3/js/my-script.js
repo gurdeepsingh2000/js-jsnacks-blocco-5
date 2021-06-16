@@ -15,8 +15,7 @@ console.log(final_result)
 
 var result1 = 0
 
-var basket = {
-    players:[
+var basket = [
 {
     nome: 'Lebron',
     cognome: 'James',
@@ -37,16 +36,16 @@ var basket = {
     anno: 2020,
     punteggio:102,
 }
-]}
+]
 
-for (var x = 0; x < basket.players.length ; x++){
-    console.log(basket.players.length)
-    for (var k in basket.players[x]){
-       console.log(k, basket.players[x][k])
+for (var x = 0; x < basket.length ; x++){
+    result1 += basket[x].punteggio;
+    for (var k in basket[x]){
+       console.log(k, basket[x][k])
     }
-    result1 += basket.players[x][k].punteggio;
-    final_type = result1 / basket.players[k][x].length
 }
+
+var final_type = parseInt(result1 / basket.length);
 
 console.log(final_type)
 

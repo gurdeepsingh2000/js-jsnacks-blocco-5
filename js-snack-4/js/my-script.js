@@ -60,3 +60,5 @@ for(var x = 0; x < ArrayStudenti.length; x++){
     }
 }
 
+console.log(ArrayStudenti)
+

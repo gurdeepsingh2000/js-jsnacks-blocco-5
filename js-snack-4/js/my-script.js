@@ -28,6 +28,7 @@ Visualizzare nell’html questi dati in una forma tabellare.
 
 var output = document.getElementById('text')
 
+
 var ArrayStudenti = [
     {
         nome: 'Ciro',
@@ -56,9 +57,15 @@ for(var x = 0; x < ArrayStudenti.length; x++){
     var ask_description = prompt('Inserisci una descrizione per lo studente')
     ArrayStudenti[x].descrizione = ask_description
     for (var k in ArrayStudenti[x]) {
-        output.innerHTML += k + ' ' + ArrayStudenti[x][k] + '<br>';
+        output.innerHTML += '\n' + ' ' + ArrayStudenti[x][k] + '<br>';
     }
 }
 
+
 console.log(ArrayStudenti)
+
+
+
+
+//--------------------
 
